@@ -1,0 +1,5 @@
+# Ignore ide specific files
+.idea/*
+
+# Ignore .sass-cache
+styles/.sass-cache/*

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FastShift Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<header>
+    <span class="background"></span>
+</header>
+<sidebar>
+    <div class="menu">
+        <ul>
+            <li class="letter">D</li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16"><defs><style>.a{fill:#03a9f4;}</style>
+                </defs><path class="a" d="M17.848,55.52a.847.847,0,0,0-1.042-.094c-1.227.8-7.384,4.834-8.046,5.468a2.293,2.293,0,0,0,0,3.336,2.54,2.54,0,0,0,3.48,0c.662-.634,4.869-6.535,5.705-7.711A.762.762,0,0,0,17.848,55.52Zm-6.768,7.6a.847.847,0,0,1-1.16,0,.764.764,0,0,1,0-1.112c.257-.243,2.005-1.438,4.156-2.871C12.581,61.2,11.334,62.872,11.08,63.119ZM21,62.563a9.732,9.732,0,0,1-1.779,5.587.83.83,0,0,1-.682.349.848.848,0,0,1-.352-.076l-1.723-.786a.772.772,0,0,1-.388-1.048.836.836,0,0,1,1.093-.372l1.057.483a8.152,8.152,0,0,0,.353-7.626.773.773,0,0,1,.41-1.04.835.835,0,0,1,1.085.393A9.636,9.636,0,0,1,21,62.563ZM4.88,66.582A.772.772,0,0,1,4.5,67.633l-1.682.786a.847.847,0,0,1-.359.08.831.831,0,0,1-.682-.349,9.725,9.725,0,0,1,1.3-12.7A10.665,10.665,0,0,1,10.5,52.5a10.8,10.8,0,0,1,4.316.887.773.773,0,0,1,.41,1.04.835.835,0,0,1-1.085.393,9.061,9.061,0,0,0-2.821-.712V55.29a.821.821,0,0,1-1.641,0V54.108a8.921,8.921,0,0,0-6.738,4.03l1.146.527a.772.772,0,0,1,.385,1.049.824.824,0,0,1-.74.446.847.847,0,0,1-.354-.078l-1.16-.533a8.137,8.137,0,0,0,.553,7.145l1.013-.473A.837.837,0,0,1,4.88,66.582Z" transform="translate(0 -52.499)"/></svg>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14"><defs><style>.a{fill:#727272;}</style>
+                </defs><path class="a" d="M0,.5v14H21V.5ZM19.206,1.763,10.5,8.772,1.794,1.763ZM1.23,13.237V2.915l9.27,7.463,9.27-7.463V13.237Zm0,0" transform="translate(0 -0.5)"/></svg>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><defs><style>.a{fill:#727272;}</style>
+                </defs><path class="a" d="M21,5.934a.457.457,0,0,0-.238-.4L10.719.055a.459.459,0,0,0-.437,0L.238,5.534a.457.457,0,0,0,0,.8L3.689,8.218.238,10.1a.456.456,0,0,0,0,.8l3.451,1.882L.238,14.664a.457.457,0,0,0,0,.8l10.043,5.478a.457.457,0,0,0,.437,0l10.043-5.478a.457.457,0,0,0,0-.8l-3.451-1.882L20.762,10.9a.457.457,0,0,0,0-.8l-3.45-1.881,3.45-1.882a.457.457,0,0,0,.238-.4ZM10.5,20.023,1.41,15.065,4.643,13.3l5.639,3.076a.459.459,0,0,0,.437,0L16.357,13.3l3.233,1.763ZM19.59,10.5l-3.451,1.882L10.5,15.458,4.861,12.381h0L1.41,10.5,4.642,8.738l5.639,3.076a.457.457,0,0,0,.437,0l5.639-3.076Zm-9.09.393L1.41,5.934,10.5.976l9.09,4.958Zm0,0" transform="translate(0 0)"/></svg>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17.001" viewBox="0 0 21 17.001"><defs><style>.a{fill:#727272;}</style>
+                </defs><g transform="translate(0 -48.76)"><path class="a" d="M6.345,17V.793h5.1V17Zm1.132-2.683h2.835V13.071H7.477Zm0-2.4h2.835V10.672H7.477Zm.009-2.4H10.3V2.283H7.485ZM0,17V.793H5.1V17Zm1.132-2.683H3.967V13.071H1.132Zm0-2.4H3.967V10.672H1.132Zm.009-2.4H3.958V2.283H1.14ZM12.838.995l5-.995L21,15.9l-5,.995Zm3.5,11.822.243,1.223,2.781-.554-.243-1.222Zm-.468-2.353.243,1.222,2.781-.553-.243-1.222Zm-1.628-8.23,1.412,7.1,2.764-.55-1.412-7.1Z" transform="translate(0 48.76)"/></g></svg>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18"><defs><style>.a{fill:#727272;}</style>
+                </defs><g transform="translate(-1 -55.235)"><path class="a" d="M4.62,18V15.083H21V18ZM0,18V15.083H2.979V18Zm4.62-7.541V7.542H21v2.917Zm-4.62,0V7.542H2.979v2.917ZM4.62,2.917V0H21V2.917ZM0,2.917V0H2.979V2.917Z" transform="translate(1 55.235)"/></g></svg>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18"><defs><style>.a{fill:#727272;}</style>
+                </defs><g transform="translate(-2 -6)"><path class="a" d="M6.3,18a.348.348,0,0,1-.35-.345V16.615H2.8v-.692H5.95V14.885a.348.348,0,0,1,.35-.346h4.2a.348.348,0,0,1,.35.346v1.038h4.2v.692h-4.2v1.039A.348.348,0,0,1,10.5,18Zm13.649-1.385v-.692h.7v.692Zm-1.4,0v-.692h.7v.692Zm-1.4,0v-.692h.7v.692Zm-1.4,0v-.692h.7v.692Zm-14.35,0v-.692h.7v.692Zm-1.4,0v-.692H.7v.692Zm12.25-3.461a.348.348,0,0,1-.35-.346V11.77h-7v-.693h7V10.039a.348.348,0,0,1,.35-.346h4.2a.348.348,0,0,1,.349.346v1.038h2.8v.693H16.8v1.038a.348.348,0,0,1-.349.346ZM20.3,11.77v-.693H21v.693Zm-16.8,0v-.693h.7v.693Zm-1.4,0v-.693h.7v.693Zm-1.4,0v-.693h.7v.693ZM3.5,8.308a.348.348,0,0,1-.35-.346V6.923H1.75V6.231h1.4V5.192a.348.348,0,0,1,.35-.345H7.7a.348.348,0,0,1,.35.345V6.231h8.4v.692H8.05V7.961a.348.348,0,0,1-.35.346ZM19.949,6.923V6.231h.7v.692Zm-1.4,0V6.231h.7v.692Zm-1.4,0V6.231h.7v.692Zm-16.8,0V6.231h.7v.692ZM11.9,3.462a.349.349,0,0,1-.35-.346V2.077h-7V1.385h7V.346A.349.349,0,0,1,11.9,0h4.2a.349.349,0,0,1,.35.346V1.385h1.4v.693h-1.4V3.116a.349.349,0,0,1-.35.346Zm8.049-1.385V1.385h.7v.693Zm-1.4,0V1.385h.7v.693Zm-15.4,0V1.385h.7v.693Zm-1.4,0V1.385h.7v.693Zm-1.4,0V1.385h.7v.693Z" transform="translate(2 6)"/></g></svg>
+            </li>
+        </ul>
+        
+
+    </div>
+
+</sidebar>
+<section>
+    <div class="row first">
+        <div class="announcemnent section">
+            <div class="header">
+                <div>
+                    <span class="title">Announcemnent</span>
+                    <span class="subtxt">From your Principal or Teachers</span>
+                </div>
+                <ul>
+                    <li>Principal</li>
+                    <li>Teacher</li>
+                </ul>
+
+            </div>
+           <div class="main">
+               <div class="content blue">
+                   <div class="left-content">
+
+                       <div>
+                           <span class="number">12459</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.001" viewBox="0 0 18 12.001"><defs>
+                               <style>.a{fill:#727272;}</style></defs><g transform="translate(0 -74.667)"><path class="a" d="M-150-189a9.676,9.676,0,0,1,9-6,9.67,9.67,0,0,1,9,6,9.67,9.67,0,0,1-9,6A9.676,9.676,0,0,1-150-189Zm4.91,0a4.047,4.047,0,0,0,4.09,4,4.048,4.048,0,0,0,4.091-4A4.048,4.048,0,0,0-141-193,4.047,4.047,0,0,0-145.091-189Zm1.524,0A2.569,2.569,0,0,1-141-191.567,2.569,2.569,0,0,1-138.433-189,2.569,2.569,0,0,1-141-186.433,2.569,2.569,0,0,1-143.567-189Z" transform="translate(150 269.667)"/></g>
+                           </svg></div>
+                   </div>
+                   <div class="right-content">
+                       <span class="title">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE </span>
+                       <span class="desc">Thank you everyone for all of your supports. Please notice days off schedule ...</span>
+                   </div>
+
+               </div>
+               <div class="content yellow">
+                   <div class="left-content">
+
+                       <div>
+                           <span class="number">12459</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.001" viewBox="0 0 18 12.001"><defs>
+                               <style>.a{fill:#727272;}</style></defs><g transform="translate(0 -74.667)"><path class="a" d="M-150-189a9.676,9.676,0,0,1,9-6,9.67,9.67,0,0,1,9,6,9.67,9.67,0,0,1-9,6A9.676,9.676,0,0,1-150-189Zm4.91,0a4.047,4.047,0,0,0,4.09,4,4.048,4.048,0,0,0,4.091-4A4.048,4.048,0,0,0-141-193,4.047,4.047,0,0,0-145.091-189Zm1.524,0A2.569,2.569,0,0,1-141-191.567,2.569,2.569,0,0,1-138.433-189,2.569,2.569,0,0,1-141-186.433,2.569,2.569,0,0,1-143.567-189Z" transform="translate(150 269.667)"/></g>
+                           </svg></div>
+                   </div>
+                   <div class="right-content">
+                       <span class="title">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE </span>
+                       <span class="desc">Thank you everyone for all of your supports. Please notice days off schedule ...</span>
+                   </div>
+
+               </div>
+               <div class="content blue">
+                   <div class="left-content">
+
+                       <div>
+                           <span class="number">12459</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.001" viewBox="0 0 18 12.001"><defs>
+                               <style>.a{fill:#727272;}</style></defs><g transform="translate(0 -74.667)"><path class="a" d="M-150-189a9.676,9.676,0,0,1,9-6,9.67,9.67,0,0,1,9,6,9.67,9.67,0,0,1-9,6A9.676,9.676,0,0,1-150-189Zm4.91,0a4.047,4.047,0,0,0,4.09,4,4.048,4.048,0,0,0,4.091-4A4.048,4.048,0,0,0-141-193,4.047,4.047,0,0,0-145.091-189Zm1.524,0A2.569,2.569,0,0,1-141-191.567,2.569,2.569,0,0,1-138.433-189,2.569,2.569,0,0,1-141-186.433,2.569,2.569,0,0,1-143.567-189Z" transform="translate(150 269.667)"/></g>
+                           </svg></div>
+                   </div>
+                   <div class="right-content">
+                       <span class="title">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE </span>
+                       <span class="desc">Thank you everyone for all of your supports. Please notice days off schedule ...</span>
+                   </div>
+
+               </div>
+               <div class="content yellow">
+                   <div class="left-content">
+
+                       <div>
+                           <span class="number">12459</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.001" viewBox="0 0 18 12.001"><defs>
+                               <style>.a{fill:#727272;}</style></defs><g transform="translate(0 -74.667)"><path class="a" d="M-150-189a9.676,9.676,0,0,1,9-6,9.67,9.67,0,0,1,9,6,9.67,9.67,0,0,1-9,6A9.676,9.676,0,0,1-150-189Zm4.91,0a4.047,4.047,0,0,0,4.09,4,4.048,4.048,0,0,0,4.091-4A4.048,4.048,0,0,0-141-193,4.047,4.047,0,0,0-145.091-189Zm1.524,0A2.569,2.569,0,0,1-141-191.567,2.569,2.569,0,0,1-138.433-189,2.569,2.569,0,0,1-141-186.433,2.569,2.569,0,0,1-143.567-189Z" transform="translate(150 269.667)"/></g>
+                           </svg></div>
+                   </div>
+                   <div class="right-content">
+                       <span class="title">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE </span>
+                       <span class="desc">Thank you everyone for all of your supports. Please notice days off schedule ...</span>
+                   </div>
+
+               </div>
+               <div class="content blue">
+                   <div class="left-content">
+
+                       <div>
+                           <span class="number">12459</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.001" viewBox="0 0 18 12.001"><defs>
+                               <style>.a{fill:#727272;}</style></defs><g transform="translate(0 -74.667)"><path class="a" d="M-150-189a9.676,9.676,0,0,1,9-6,9.67,9.67,0,0,1,9,6,9.67,9.67,0,0,1-9,6A9.676,9.676,0,0,1-150-189Zm4.91,0a4.047,4.047,0,0,0,4.09,4,4.048,4.048,0,0,0,4.091-4A4.048,4.048,0,0,0-141-193,4.047,4.047,0,0,0-145.091-189Zm1.524,0A2.569,2.569,0,0,1-141-191.567,2.569,2.569,0,0,1-138.433-189,2.569,2.569,0,0,1-141-186.433,2.569,2.569,0,0,1-143.567-189Z" transform="translate(150 269.667)"/></g>
+                           </svg></div>
+                   </div>
+                   <div class="right-content">
+                       <span class="title">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE </span>
+                       <span class="desc">Thank you everyone for all of your supports. Please notice days off schedule ...</span>
+                   </div>
+
+               </div>
+               <div class="content yellow">
+                   <div class="left-content">
+
+                       <div>
+                           <span class="number">12459</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.001" viewBox="0 0 18 12.001"><defs>
+                               <style>.a{fill:#727272;}</style></defs><g transform="translate(0 -74.667)"><path class="a" d="M-150-189a9.676,9.676,0,0,1,9-6,9.67,9.67,0,0,1,9,6,9.67,9.67,0,0,1-9,6A9.676,9.676,0,0,1-150-189Zm4.91,0a4.047,4.047,0,0,0,4.09,4,4.048,4.048,0,0,0,4.091-4A4.048,4.048,0,0,0-141-193,4.047,4.047,0,0,0-145.091-189Zm1.524,0A2.569,2.569,0,0,1-141-191.567,2.569,2.569,0,0,1-138.433-189,2.569,2.569,0,0,1-141-186.433,2.569,2.569,0,0,1-143.567-189Z" transform="translate(150 269.667)"/></g>
+                           </svg></div>
+                   </div>
+                   <div class="right-content">
+                       <span class="title">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE </span>
+                       <span class="desc">Thank you everyone for all of your supports. Please notice days off schedule ...</span>
+                   </div>
+
+               </div>
+               <div class="content blue">
+                   <div class="left-content">
+
+                       <div>
+                           <span class="number">12459</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.001" viewBox="0 0 18 12.001"><defs>
+                               <style>.a{fill:#727272;}</style></defs><g transform="translate(0 -74.667)"><path class="a" d="M-150-189a9.676,9.676,0,0,1,9-6,9.67,9.67,0,0,1,9,6,9.67,9.67,0,0,1-9,6A9.676,9.676,0,0,1-150-189Zm4.91,0a4.047,4.047,0,0,0,4.09,4,4.048,4.048,0,0,0,4.091-4A4.048,4.048,0,0,0-141-193,4.047,4.047,0,0,0-145.091-189Zm1.524,0A2.569,2.569,0,0,1-141-191.567,2.569,2.569,0,0,1-138.433-189,2.569,2.569,0,0,1-141-186.433,2.569,2.569,0,0,1-143.567-189Z" transform="translate(150 269.667)"/></g>
+                           </svg></div>
+                   </div>
+                   <div class="right-content">
+                       <span class="title">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE </span>
+                       <span class="desc">Thank you everyone for all of your supports. Please notice days off schedule ...</span>
+                   </div>
+
+               </div>
+               <div class="content yellow">
+                   <div class="left-content">
+
+                       <div>
+                           <span class="number">12459</span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12.001" viewBox="0 0 18 12.001"><defs>
+                               <style>.a{fill:#727272;}</style></defs><g transform="translate(0 -74.667)"><path class="a" d="M-150-189a9.676,9.676,0,0,1,9-6,9.67,9.67,0,0,1,9,6,9.67,9.67,0,0,1-9,6A9.676,9.676,0,0,1-150-189Zm4.91,0a4.047,4.047,0,0,0,4.09,4,4.048,4.048,0,0,0,4.091-4A4.048,4.048,0,0,0-141-193,4.047,4.047,0,0,0-145.091-189Zm1.524,0A2.569,2.569,0,0,1-141-191.567,2.569,2.569,0,0,1-138.433-189,2.569,2.569,0,0,1-141-186.433,2.569,2.569,0,0,1-143.567-189Z" transform="translate(150 269.667)"/></g>
+                           </svg></div>
+                   </div>
+                   <div class="right-content">
+                       <span class="title">MERRY CHRISTMAS EVERYONE AND DAYS OFF SCHEDULE </span>
+                       <span class="desc">Thank you everyone for all of your supports. Please notice days off schedule ...</span>
+                   </div>
+
+               </div>
+           </div>
+        </div>
+        <div class="tasks section">
+            <div class="header">
+                <span class="title">Tasks</span>
+                <ul>
+                    <li>TODAY</li>
+                    <li>WEEK</li>
+                    <li>MONTH</li>
+                </ul>
+
+
+            </div>
+            <div class="main">
+                <div class="content blue">
+
+                    <label class="container" for="first">Lorem ipsum is some dummy text generator used for print and content testing.
+                        <input type="checkbox"  id="first" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="content yellow">
+
+                    <label class="container" for="second">Lorem ipsum is some dummy text generator used for print and content testing.
+                        <input type="checkbox"  id="second" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="content grey">
+
+                    <label class="container" for="third">Lorem ipsum is some dummy text generator used for print and content testing.
+                        <input type="checkbox"  id="third">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="content green">
+
+                    <label class="container" for="forth">Lorem ipsum is some dummy text generator used for print and content testing.
+                        <input type="checkbox"  id="forth">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="content light-grey">
+
+                    <label class="container" for="fifth">Lorem ipsum is some dummy text generator used for print and content testing.
+                        <input type="checkbox"  id="fifth">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="content blue">
+
+                    <label class="container" for="sixth">Lorem ipsum is some dummy text generator used for print and content testing.
+                        <input type="checkbox"  id="sixth">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="content yellow">
+
+                    <label class="container" for="seventh">Lorem ipsum is some dummy text generator used for print and content testing.
+                        <input type="checkbox"  id="seventh">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="content grey">
+
+                    <label class="container" for="eighth">Lorem ipsum is some dummy text generator used for print and content testing.
+                        <input type="checkbox"  id="eighth">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="row second">
+        <div class="messages section">
+            <div class="header">
+                <span class="title">Messages</span>
+                <span class="subtxt">Current Conversations </span>
+
+            </div>
+            <div class="main">
+                <div class="content red">
+                    <div class="image green">
+                        <img src="images/ava1.png" alt="avatar" >
+                    </div>
+                    <div>
+                        <span class="name">Mr. Sheldon Cooper</span>
+                        <span class="msg"> What is wrong with your homework ?</span>
+                        <span class="time">Just now</span>
+                    </div>
+
+                </div>
+                <div class="content ">
+                    <div class="image red">
+                        <img src="images/ava2.png" alt="avatar" >
+                    </div>
+                    <div>
+                        <span class="name">Jason Bourne </span>
+                        <span class="msg"> Hey dude ! What’s the plan ?</span>
+                        <span class="time"> 2 hours ago</span>
+                    </div>
+
+                </div>
+                <div class="content ">
+                    <div class="image green">
+                        <img src="images/ava3.png" alt="avatar" >
+                    </div>
+                    <div>
+                        <span class="name">Mr. Barney Stinson</span>
+                        <span class="msg">  Have you tried my formula ?</span>
+                        <span class="time">1 day ago</span>
+                    </div>
+
+                </div>
+                <div class="content ">
+                    <div class="image green">
+                        <img src="images/ava4.png" alt="avatar" >
+                    </div>
+                    <div>
+                        <span class="name">Jesse Pinkman </span>
+                        <span class="msg"> I finished it 2 days ago</span>
+                        <span class="time">1 day ago</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="courses section">
+            <div class="header">
+                <span class="title">Courses</span>
+                <span class="subtxt">Your Current Courses And Process </span>
+
+            </div>
+            <div class="main">
+                <div class="content yellow">
+                    <div>
+                        <span class="percentage"> 100% </span>
+                        <span class="bg "></span>
+                    </div>
+                    <div>
+                        <span class="title">History of the Earth</span>
+                        <span class="author">Teacher : Mr.Jason Bourne</span>
+                    </div>
+
+
+                </div>
+                <div class="content blue">
+                    <div>
+                        <span class="percentage"> 70% </span>
+                        <span class="bg "></span>
+                    </div>
+                    <div>
+                        <span class="title">Introduction to Geography</span>
+                        <span class="author">Teacher : Mr.Barney Stinson</span>
+                    </div>
+
+
+                </div>
+                <div class="content blue">
+                    <div class="small">
+                        <span class="percentage "> 55% </span>
+                        <span class="bg "></span>
+                    </div>
+                    <div>
+                        <span class="title">Math Formative Assessment</span>
+                        <span class="author">Teacher : Ms.Charlie Theron</span>
+                    </div>
+
+
+                </div>
+                <div class="content red">
+                    <div>
+                        <span class="percentage"> 20% </span>
+                        <span class="bg "></span>
+                    </div>
+                    <div>
+                        <span class="title">The Special Theory of Relativity</span>
+                        <span class="author">Teacher : Mr.Matt Damon</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="events ">
+            <div class="events-item blue">
+                <div class="content ">
+                    <div class="numbers">
+                        <span>11</span>
+                        <span>14</span>
+                    </div>
+                    <div class="texts">
+                        <div class="item">
+                            <span class="title">History of the Earth Assignment</span>
+                            <span class="time">09h30’</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="events-item yellow">
+                <div class="content ">
+                    <div class="numbers">
+                        <span>11</span>
+                        <span>14</span>
+                    </div>
+                    <div class="texts">
+                        <div class="item">
+                            <span class="title">History of the Earth Assignment</span>
+                            <span class="time">09h30’</span>
+                        </div>
+                        <div class="item">
+                            <span class="title">Math Formative Assessment Test</span>
+                            <span class="time">14h30’</span>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="events-item aqua">
+                <div class="content ">
+                    <div class="numbers">
+                        <span>11</span>
+                        <span>14</span>
+                    </div>
+                    <div class="texts">
+                        <div class="item">
+                            <span class="title">History of the Earth Final Test</span>
+                            <span class="time">15h45’</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+</section>
+</body>
+</html>
