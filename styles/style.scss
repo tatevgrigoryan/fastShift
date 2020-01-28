@@ -351,6 +351,7 @@ section {
         .header{
           background-color: $lightBlue;
           padding: 15px;
+          position: relative;
           .title {
             display: block;
             font-size: 18px;
@@ -363,6 +364,21 @@ section {
             font-size: 12px;
             line-height: 14.4px;
           }
+          &:after {
+            content: '+';
+            display: block;
+            background-color: #FFC107;
+            color: #ffffff;
+            top: 46px;
+            width: 35px;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            position: absolute;
+            right: 15px;
+            border-radius: 50%;
+          }
+
         }
         .content {
           display: flex;
@@ -449,6 +465,7 @@ section {
         .header{
           background-color: $lightBlue;
           padding: 15px;
+          position: relative;
           .title {
             display: block;
             font-size: 18px;
@@ -460,6 +477,20 @@ section {
             color: #B3E5FC;
             font-size: 12px;
             line-height: 14.4px;
+          }
+          &:after {
+            content: '+';
+            display: block;
+            background-color: #FFC107;
+            color: #ffffff;
+            top: 46px;
+            width: 35px;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            position: absolute;
+            right: 15px;
+            border-radius: 50%;
           }
         }
         .main {

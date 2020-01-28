@@ -239,7 +239,8 @@ section {
       margin-right: 30px; }
       section .row .messages.section .header {
         background-color: #03A9F4;
-        padding: 15px; }
+        padding: 15px;
+        position: relative; }
         section .row .messages.section .header .title {
           display: block;
           font-size: 18px;
@@ -250,6 +251,19 @@ section {
           color: #B3E5FC;
           font-size: 12px;
           line-height: 14.4px; }
+        section .row .messages.section .header:after {
+          content: '+';
+          display: block;
+          background-color: #FFC107;
+          color: #ffffff;
+          top: 46px;
+          width: 35px;
+          text-align: center;
+          height: 35px;
+          line-height: 35px;
+          position: absolute;
+          right: 15px;
+          border-radius: 50%; }
       section .row .messages.section .content {
         display: flex;
         align-items: center;
@@ -306,7 +320,8 @@ section {
       margin-right: 60px; }
       section .row .courses.section .header {
         background-color: #03A9F4;
-        padding: 15px; }
+        padding: 15px;
+        position: relative; }
         section .row .courses.section .header .title {
           display: block;
           font-size: 18px;
@@ -317,6 +332,19 @@ section {
           color: #B3E5FC;
           font-size: 12px;
           line-height: 14.4px; }
+        section .row .courses.section .header:after {
+          content: '+';
+          display: block;
+          background-color: #FFC107;
+          color: #ffffff;
+          top: 46px;
+          width: 35px;
+          text-align: center;
+          height: 35px;
+          line-height: 35px;
+          position: absolute;
+          right: 15px;
+          border-radius: 50%; }
       section .row .courses.section .main .content {
         display: flex;
         padding: 10px;
